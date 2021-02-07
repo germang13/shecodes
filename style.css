@@ -30,7 +30,9 @@ li {
 #title {
   text-align: center;
   color: #cfd3ce;
-  font-weight: 600;
+  font-family: "Biryani", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
 }
 #city-input {
   border-color: #34626c;
@@ -122,6 +124,7 @@ li {
   padding-top: 10px;
   padding-bottom: 20px;
   color: #34626c;
+  font-family: "Overpass", sans-serif;
 }
 
 #personal-info:hover {
