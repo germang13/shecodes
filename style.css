@@ -8,6 +8,8 @@ h1 {
   font-weight: 100;
   line-height: 28px;
   margin: 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 ul {
@@ -25,10 +27,10 @@ li {
 }
 
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 4px solid #dadde1;
   padding: 15px;
   margin: 20px auto;
-  border-radius: 10px;
+  border-radius: 20px;
   max-width: 600px;
 }
 
@@ -55,4 +57,10 @@ li {
 }
 .intro {
   text-align: center;
+}
+
+small {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
