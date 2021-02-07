@@ -1,10 +1,10 @@
 body {
   font-family: "Overpass", sans-serif;
-  background-color: #f7f7e8;
+  background-color: #cfd3ce;
 }
 
 h1 {
-  color: #7c7c7c;
+  color: #cfd3ce;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -20,21 +20,58 @@ ul {
 }
 
 li {
-  color: #7c7c7c;
+  color: #cfd3ce;
   font-size: 16px;
   font-weight: 100;
   height: 19px;
   line-height: 1;
   list-style: none;
 }
+#title {
+  text-align: center;
+  color: #cfd3ce;
+  font-weight: 600;
+}
+#city-input {
+  border-color: #34626c;
+  color: #34626c;
+}
+
+#current-location-button {
+  background-color: #34626c;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  transition: all 200ms ease;
+}
+
+#current-location-button:hover {
+  cursor: pointer;
+  background: #25474e;
+}
+
+#search-button {
+  background-color: #34626c;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  transition: all 200ms ease;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  background: #25474e;
+}
 
 .weather-app {
-  border: 4px solid #9dad7f;
+  border: 4px solid #839b97;
   padding: 15px;
   margin: 20px auto;
   border-radius: 20px;
   max-width: 600px;
-  background-color: #c7cfb7;
+  background-color: #839b97;
 }
 
 .weather-icon {
@@ -62,10 +99,34 @@ li {
   text-align: center;
 }
 
-small {
+#celsius-link {
+  color: black;
+}
+
+#celsius-link:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#fahrenheit-link {
+  color: black;
+}
+
+#fahrenheit-link:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#personal-info {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
+  color: #34626c;
+}
+
+#personal-info:hover {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .weather-forecast {
