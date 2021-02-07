@@ -125,11 +125,13 @@ li {
   padding-bottom: 20px;
   color: #34626c;
   font-family: "Overpass", sans-serif;
+  transition: all 400ms ease;
 }
 
 #personal-info:hover {
   cursor: pointer;
   font-weight: bold;
+  color: white;
 }
 
 .weather-forecast {
