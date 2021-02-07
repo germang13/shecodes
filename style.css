@@ -137,13 +137,14 @@ li {
 }
 
 .weather-forecast h3 {
-  color: #bbbbbb;
-  font-size: 16px;
+  color: #34626c;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   height: 15px;
   line-height: 15px;
   padding-top: 8px;
+  font-weight: bold;
 }
 
 .weather-forecast img {
