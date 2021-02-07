@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
 </head>
@@ -15,7 +17,7 @@
 <body>
     <div class="container">
         <div class="weather-app">
-            <h1 id="title" class="intro">Check your weather</h1>
+            <h1 id="title" class="intro">Check the weather here</h1>
             <form class="search-form" id="search-form">
                 <div class="row">
                     <div class="col-6">
@@ -23,11 +25,11 @@
                             id="city-input" class="form-control shadow-sm" />
                     </div>
                     <div class="col-3">
-                        <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" />
+                        <input type="submit" value="Search 🔍" class="form-control btn btn-primary shadow-sm w-100" />
                     </div>
                     <div class="col-3">
                         <button class="btn btn-success w-100" id="current-location-button">
-                            📍
+                            Current📍
                         </button>
                     </div>
                 </div>
@@ -62,7 +64,7 @@
                     </ul>
                 </div>
             </div>
-            <h3>Have a look at the next hours</h3>
+            <h1>Have a look at the next hours</h1>
         <div class="row weather-forecast" id="forecast"></div>
         <small>
             <br>
