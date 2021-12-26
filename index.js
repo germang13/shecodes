@@ -48,7 +48,9 @@ let weatherIcon = document.querySelector("#icon");
 }
 
 function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
+  //const unixTime = new Date().getTime() - response.data.city.timezone * 1000;
+  updateDate(response.data.city.timezone * 1000);
+  let forecastElement = document.querySelector('#forecast');
   forecastElement.innerHTML = null;
   let forecast = null;
   for (let index = 0; index < 6; index++) {
@@ -116,9 +118,20 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
+function updateDate(offset) {
+  let dateElement = document.querySelector('#date');
+  let currentTime;
+  if (offset) {
+    currentTime = new Date();
+    localOffset = -currentTime.getTimezoneOffset() * 60 * 1000;
+    currentTime = new Date(currentTime.getTime() - localOffset + offset); 
+  } else {
+    currentTime = new Date();
+  }
+  dateElement.innerHTML = formatDate(currentTime);
+}
+
+updateDate();
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
