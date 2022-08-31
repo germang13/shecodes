@@ -164,3 +164,7 @@ li {
   line-height: 15px;
   white-space: nowrap;
 }
+
+.active {
+  text-decoration: underline;
+}
